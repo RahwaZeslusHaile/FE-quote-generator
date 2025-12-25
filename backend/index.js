@@ -9,9 +9,8 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-const filePath = path.resolve('../frontend/quotes.json');
+const filePath = path.resolve('./quotes.json');
 let quotes = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
 app.get('/api/quotes', (req, res) => {
   res.json(quotes);
 });
