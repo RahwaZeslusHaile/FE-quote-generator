@@ -12,8 +12,7 @@ const displayRandomQuote = () => {
 
 async function loadQuotes() {
   try {
-    const API_URL = "https://zo4okwkkso04wk4w0wcoos4c.hosting.codeyourfuture.io";
-
+    const API_URL = "https://vkcko88wwws8o0884g0sks48.hosting.codeyourfuture.io";
       const res = await fetch(`${API_URL}/api/quotes`);
     if (!res.ok) throw new Error('Quotes not fetched correctly');
 
@@ -41,7 +40,7 @@ addQuoteForm.addEventListener('submit', async (e) => {
   if (!quote || !author) return;
 
   try {
-    const API_URL = "https://zo4okwkkso04wk4w0wcoos4c.hosting.codeyourfuture.io";
+    const API_URL = "https://vkcko88wwws8o0884g0sks48.hosting.codeyourfuture.io";
     const res = await fetch(`${API_URL}/api/quotes`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
